@@ -1,0 +1,6 @@
+{
+  "name": "polymer-route-demo2",
+  "short_name": "polymer-route-demo2",
+  "start_url": "/",
+  "display": "standalone"
+}
