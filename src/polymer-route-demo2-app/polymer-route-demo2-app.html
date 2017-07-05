@@ -12,6 +12,8 @@
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 
 <link rel="import" href="my-view1.html">
+<link rel="import" href="my-view2.html">
+<link rel="import" href="my-view3.html">
 
 <dom-module id="polymer-route-demo2-app">
   <template>
@@ -33,6 +35,7 @@
       <!-- left navigation -->
       <app-drawer id="drawer" slot="drawer">
         <app-toolbar>Menu</app-toolbar>
+        <p>Left sidebar</p>
         <iron-selector selected="[[page]]"
           attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="view1" href="view1">Page 1</a>
@@ -46,8 +49,14 @@
         <app-header slot="header" condenses reveals effects="waterfall">
           <app-toolbar>
             <paper-icon-button icon="my-icons:menu" drawer-toggle></paper-icon-button>
-            <div main-title>My App</div>
+            <div main-title>I am the header</div>
           </app-toolbar>
+          <iron-selector selected="[[page]]"
+            attr-for-selected="name" class="drawer-list" role="navigation">
+            <a name="view1" href="view1">Page 1</a>
+            <a name="view2" href="view2">Page 2</a>
+            <a name="view3" href="view3">Page 3</a>
+          </iron-selector>
         </app-header>
         <!-- Main content -->
         <!-- Main body -->
